@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnosis web page</title>
+    <link href="/web.css" rel="stylesheet" type="text/css">
+    <script src="/web.js"></script>
+    <script src="/raw_contents.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header_white">
+            <!-- for white background -->
+            <div class="head_content">
+                <h3>あなたのタイプは</h3>
+                <h2 style="color: sandybrown;">General</h2>
+                <h3 style="color: sandybrown;">ジェネラル</h3>
+            </div>
+
+        </div>
+
+        <!-- for image -->
+        <div class="image">
+            <img src="general.jpg" alt="General image">
+
+            <div class="first-txt">
+                <h3>勝ちにこだわる</h3>
+                <h2>結果</h2>
+                <h2>主義者</h2><br><br><br><br>
+                <p style="color:white;font-size:22px;">勝ちに貪欲で、成果のためには地味な努力 <br>
+                    も惜しまないあなた。<br><br><br>
+                    自分で相場判断ができ、勝てる時にしっかり<br>
+                    勝ちを掴みにいく勝負強さを持っています。<br><br><br>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="solid_color">
+            <div class="last-txt">
+                <p style="color:white;font-size:22px;">そんなあなたは、高い能力があることで人に<br>
+                    頼るのが苦手な一面もあるかもしれません。<br>
+                    投資で頼れる存在をつくることで、あなたの<br>
+                    勝率はさらに高まるはず！</p>
+            </div>
+            
+                
+        </div>
+
+        <div class="Last_portion">
+
+            <div id="polygon-chart" class="polygon-chart"></div>
+            
+
+            <div class="box">
+                <div class="button">
+                    <button type="submit" class="btn">診断結果を保存</button>
+                </div>
+
+                <h4>診断結果をシェアする</h4>
+
+                <div class="row">
+                    <div class="clm">
+                        <img src="facebook.png" alt="" style="width: 100%">
+                    </div>
+
+                    <div class="clm">
+                        <img src="twitter.png" alt="" style="width: 100%">
+                    </div>
+
+                    <div class="clm">
+                        <img src="instagram.png" alt="" style="width: 100%">
+                    </div>
+                </div>  
+                
+            </div>
+
+        </div>
+        
+        </div>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+  let el = document.getElementById("polygon-chart");
+
+  let chart = new window.PolygonChart({
+    target: el,
+    radius: 200,
+    data: {
+      data: [
+        [
+          0.25,//4
+          0.25,//5
+          0.25,//6
+          0.75,//1
+          1,//2
+          1//3
+        ],
+      ],
+      sides: 6,
+      tooltips: {
+        roundTo: 2,
+        percentage: true,
+      },
+      colors: {
+        normal: {
+          polygonStroke: "#A54AE9",
+          polygonFill: "#a54ae94f",
+          pointStroke: "transparent",
+          pointFill: "#A54AE9",
+        },
+        onHover: {
+          polygonStroke: "#A54AE9",
+          polygonFill: "rgba(0,0,0,0.3)",
+          pointStroke: "#A54AE9",
+          pointFill: "#fff",
+        },
+      },
+    },
+    polygon: {
+      colors: {
+        normal: {
+          fill: "#231E2C",
+          stroke: "#3A255E",
+        },
+        onHover: {
+          fill: "#231E2C",
+          stroke: "#993DE0",
+        }
+      }
+    },
+    levels: {
+      count: 4,
+      labels: {
+        enabled: true,
+        position: {
+          spline: 3,
+          quadrant: 0,
+        },
+        colors: {
+          normal: "#8B27D7",
+          onHover: "#A54AE9",
+        },
+      },
+    },
+  });
+  chart.init();
+</script>
+
+
+</html>

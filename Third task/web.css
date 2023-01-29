@@ -1,0 +1,155 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: sans-serif;
+    background: gray;
+
+}
+
+.container
+{
+    position: relative;
+    width: 598px;
+    margin: 0 auto;
+    justify-content: center;
+    background:white;
+    height: 3500px;
+
+}
+
+.container .header_white{
+    text-align: center;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:-100px; 
+    position: relative;
+}
+.head_content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .image{
+    background-image: url("general_1.jpg");
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    clip-path: polygon(0 0, 100% 10%, 100% 30%, 0% 30%);
+    margin: auto auto;
+    position: relative;
+}
+.text-block {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+}
+
+.container .solid_color{
+    margin: 0 auto;
+    clip-path: polygon(0 25%, 100% 0%, 100% 65%, 0% 90%);
+    background-color: #e39746;
+    text-align: center;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-2500px; 
+    position: relative;
+    height: 850px;
+    /* position: absolute; */
+}
+
+.container .Last_portion{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:-100px; 
+    position: relative;
+    background-color: gainsboro;
+    clip-path: polygon(0 0, 100% 15%, 100% 95%, 0 80%);
+    height: 2080px;
+    margin-top: -500px;
+}
+
+
+
+.first-txt{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+h3{
+    font-size: xx-large;
+}
+
+h2{
+    font-size: xxx-large;
+    height: 30px;
+}
+
+.last-txt{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    z-index: 1;
+}
+
+.container .Last_portion .button .btn{
+    padding: 20px 100px;
+    background-color: #a80810;
+    color: wheat;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 60px;
+} 
+
+.container .Last_portion .box{
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: gainsboro;
+    position: absolute;
+    /* margin-top: 200px; */
+    box-sizing: border-box;
+}
+
+.clm{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 10px;
+    width: 70px;
+}
+
+.mark.brown{
+    color: #ba831e;
+}
+
+.container .Last_portion .polygon-chart {
+    display: block;
+    width: 800px;
+    height: 600px;
+    margin-top: -800px;
+}
+
